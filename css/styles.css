@@ -1,0 +1,75 @@
+/* Base Styles*/
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.75em;
+}
+
+.menu-item {
+  position: relative;
+  background-color: #a8a5a6;
+  border: 1px solid black;
+  padding-top: 45px;
+  margin: 15px 15px 0px 15px;
+  float: left;
+}
+
+.title {
+  width: 150px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.content {
+  text-align: left;
+  padding: 10px 10px 0px 10px ;
+  margin: 10px 0px 10px 0px;
+  text-transform: lowercase;
+}
+
+#chicken  {
+  background-color: #4d91e2;
+}
+
+#beef  {
+  background-color: #3a571c;
+  color: white;
+}
+#sushi  {
+  background-color: #cd1076;
+}
+/* Large devices */
+@media (min-width: 992px) {
+  .menu-item {
+    width: 30%;
+  }
+}
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-item {
+    width: 46%;
+  }
+  #section3 {
+    width: inherit;
+    clear: both;
+  }
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+  .menu-item {
+    clear: both;
+  }
